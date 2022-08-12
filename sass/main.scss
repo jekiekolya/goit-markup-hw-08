@@ -1,0 +1,56 @@
+//             TEXT COLOR
+//   |============================
+//    main color for text: #757575;
+//    main color for text in header: #212121;
+//    secondary color for text: #FFFFFF;
+//    color accent: #2196F3
+//    Color for logo: #000000
+//   |============================
+
+//           BACKGROUND COLOR
+//   |============================
+//    main background color: #FFFFFF;
+//    secondary background color: #2F303A;
+//    another background color: #F5F4FA
+//   |============================
+//
+
+//              ELEMENTS
+//   |============================
+//    Color for icons: #AFB1B8;
+//    Time function for animation: cubic-bezier(0.4, 0, 0.2, 1);
+//   |============================
+//
+
+// Main components
+@import './utils/variables';
+@import './utils/reset';
+@import './components/common-set';
+
+// Page HEADER
+@import './components/page-header';
+
+// Logo
+@import './components/logo';
+
+// Page - WebStudio
+// Section - Order
+@import './components/page-webstudio/section-order';
+@import './components/page-webstudio/modal-window';
+// Section - Advantages
+@import './components/page-webstudio/section-adventage';
+// Section - Work
+@import './components/page-webstudio/section-work';
+// Section - Team
+@import './components/page-webstudio/section-team';
+// Section - Client
+@import './components/page-webstudio/section-client';
+
+// Page - Portfolio
+// Section - Button
+@import './components/page-portfolio/section-button';
+// Section - Card
+@import './components/page-portfolio/section-card';
+
+// Page FOOTER
+@import './components/page-footer';

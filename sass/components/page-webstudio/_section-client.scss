@@ -1,0 +1,34 @@
+/* Our clients */
+.client__list {
+  display: flex;
+  justify-content: center;
+}
+
+.client__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: $primary-icon-color;
+  border: 1px solid $primary-icon-color;
+  border-radius: 4px;
+
+  transition: color 250ms $time-function, border 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.client__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}

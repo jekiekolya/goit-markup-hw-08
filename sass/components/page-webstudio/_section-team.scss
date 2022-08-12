@@ -1,0 +1,75 @@
+/* Our team */
+.team {
+  background-color: $secondary-white-color;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__item {
+  width: 270px;
+  text-align: center;
+
+  background: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__hero-title {
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team__hero-desc {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $primary-icon-color;
+
+  transition: background-color 250ms $time-function, color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
