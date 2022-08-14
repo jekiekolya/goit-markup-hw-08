@@ -5,7 +5,6 @@
 }
 
 .adventage__list {
-  display: flex;
 }
 
 .adventage__item:not(:last-child) {
@@ -27,9 +26,6 @@
 }
 
 .adventage__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 120px;
   background-color: $secondary-white-color;
   border-radius: 4px;

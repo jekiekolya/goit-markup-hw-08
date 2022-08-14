@@ -1,6 +1,5 @@
 /* Our clients */
 .client__list {
-  display: flex;
   justify-content: center;
 }
 
@@ -9,9 +8,6 @@
 }
 
 .client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   color: $primary-icon-color;

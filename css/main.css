@@ -29,6 +29,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -64,8 +66,18 @@ button {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 480px;
   padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .container--center {
@@ -83,15 +95,6 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav__list {
-  display: flex;
 }
 
 .main-nav__item:not(:last-child) {
@@ -143,15 +146,12 @@ button {
 
 /* Contacts */
 .header-contact {
-  display: flex;
   margin-left: auto;
 }
 
 .header-contact__link {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  align-items: center;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -445,10 +445,6 @@ button {
   padding-bottom: 0px;
 }
 
-.adventage__list {
-  display: flex;
-}
-
 .adventage__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -467,9 +463,6 @@ button {
 }
 
 .adventage__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -483,10 +476,6 @@ button {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-
-.work__list {
-  display: flex;
 }
 
 .work__item {
@@ -515,10 +504,6 @@ button {
 /* Our team */
 .team {
   background-color: #f5f4fa;
-}
-
-.team__list {
-  display: flex;
 }
 
 .team__item:not(:last-child) {
@@ -584,7 +569,6 @@ button {
 
 /* Our clients */
 .client__list {
-  display: flex;
   justify-content: center;
 }
 
@@ -593,9 +577,6 @@ button {
 }
 
 .client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   color: #afb1b8;
@@ -729,11 +710,6 @@ button {
   background-color: #2f303a;
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer__section-address {
   width: 231px;
   margin-right: 70px;
@@ -782,10 +758,6 @@ button {
 }
 
 /* subscribe to the newsletter */
-.form-subscribe__field {
-  display: flex;
-}
-
 .form-subscribe__input {
   width: 358px;
   height: 50px;
