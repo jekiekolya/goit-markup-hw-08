@@ -4,14 +4,17 @@
 }
 
 .team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team__item {
-  width: 270px;
+  width: 100%;
   text-align: center;
 
   background: $primary-white-color;
@@ -20,9 +23,13 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__hero-img {
+  width: 100%;
+}
+
 .team__info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__hero-title {
@@ -31,22 +38,19 @@
   color: $title-text-color;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 
 .team__hero-desc {
   margin-bottom: 16px;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 
 .social__list {
   display: flex;
   justify-content: center;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .social__link {

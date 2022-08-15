@@ -1,4 +1,11 @@
 /* What we are doing */
+.work {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
 
 .section-title {
   margin-bottom: 50px;

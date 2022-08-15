@@ -1,40 +1,42 @@
 // Order a service
 .order {
-  text-align: center;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background/group-people.jpg);
-  background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 600px;
-  background-position: center;
   margin-right: auto;
   margin-left: auto;
+  padding: 118px 0px;
 
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../../images/background/mobile/group-people.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px auto;
   background-color: $secondary-background-color;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../../images/background/mobile/group-people@2x.jpg');
+    }
+  }
 }
 
 .order__title {
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 30px;
 
   color: $primary-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   border: 0px;
-  font-family: inherit;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;

@@ -1,14 +1,15 @@
 /* Our adventages */
 .adventage {
-  padding-top: 94px;
-  padding-bottom: 0px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+  }
 }
 
 .adventage__list {
 }
 
 .adventage__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .adventage__title {
@@ -18,14 +19,19 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .adventage__desc {
-  width: 270px;
+  width: 100%;
   line-height: 1.71;
 }
 
 .adventage__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 120px;
   background-color: $secondary-white-color;
   border-radius: 4px;

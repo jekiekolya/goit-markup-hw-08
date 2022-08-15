@@ -88,8 +88,15 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -328,36 +335,37 @@ button {
 }
 
 .order {
-  text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/group-people.jpg);
-  background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 600px;
-  background-position: center;
   margin-right: auto;
   margin-left: auto;
+  padding: 118px 0px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/background/mobile/group-people.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px auto;
   background-color: #2f303a;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/background/mobile/group-people@2x.jpg");
+  }
 }
 
 .order__title {
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -575,13 +583,14 @@ button {
 }
 
 /* Our adventages */
-.adventage {
-  padding-top: 94px;
-  padding-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .adventage {
+    padding-top: 94px;
+  }
 }
 
 .adventage__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .adventage__title {
@@ -590,14 +599,18 @@ button {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .adventage__desc {
-  width: 270px;
+  width: 100%;
   line-height: 1.71;
 }
 
 .adventage__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -605,6 +618,15 @@ button {
 }
 
 /* What we are doing */
+.work {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
 .section-title {
   margin-bottom: 50px;
   color: #212121;
@@ -641,21 +663,28 @@ button {
   background-color: #f5f4fa;
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .team__item {
-  width: 270px;
+  width: 100%;
   text-align: center;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__hero-img {
+  width: 100%;
+}
+
 .team__info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__hero-title {
@@ -663,22 +692,19 @@ button {
   color: #212121;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 
 .team__hero-desc {
   margin-bottom: 16px;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 
 .social__list {
   display: flex;
   justify-content: center;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .social__link {
@@ -704,15 +730,17 @@ button {
 
 /* Our clients */
 .client__list {
+  display: flex;
   justify-content: center;
-}
-
-.client__item:not(:last-child) {
-  margin-right: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .client__link {
-  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
