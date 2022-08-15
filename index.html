@@ -20,7 +20,8 @@
 
   <body>
     <header class="page-header">
-      <div class="container container--center">
+      <!-- Header for tablet and desktop -->
+      <div class="container container--center main-header">
         <!-- Navigation -->
         <nav class="main-nav">
           <a href="./index.html" lang="en" class="logo link page-header__logo">
@@ -57,6 +58,31 @@
           </li>
         </ul>
       </div>
+
+      <!-- Header for mobile -->
+      <div class="container container--center mobile-header">
+        <nav class="mobile-nav">
+          <a href="./index.html" lang="en" class="logo link page-header__logo">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <button type="button" class="mobile-nav__menu-btn" data-menu-open>
+            <svg width="40" height="40" aria-label="Open mobile menu">
+              <use href="./images/icons/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+
+          <!-- Modal window - menu -->
+          <div class="menu__backdrop is-hidden" data-menu>
+            <div class="menu__window">
+              <button type="button" class="menu__btn-close" data-menu-close>
+                <svg width="40" height="40" aria-label="Close mobile menu">
+                  <use href="./images/icons/icons.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -64,9 +90,9 @@
       <section class="section order">
         <div class="container">
           <h1 class="order__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button button--active" data-modal-open
-            >Замовити послугу</button
-          >
+          <button type="button" class="button button--active" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
 
         <!-- Modal window for order-->
@@ -685,6 +711,7 @@
       </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

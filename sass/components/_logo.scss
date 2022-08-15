@@ -1,19 +1,29 @@
 // logo
 .logo {
+  padding: 16px 0;
+
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
 
   &__accent {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .page-header__logo {
-  margin-right: 93px;
   color: #000000;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {

@@ -29,18 +29,20 @@ button {
   width: 480px;
   padding: 0 15px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 1200px;
   }
 }
 
 .container--center {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .section {
