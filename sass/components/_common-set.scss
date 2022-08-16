@@ -26,15 +26,15 @@ button {
 
 .container {
   margin: 0 auto;
-  width: 480px;
+  max-width: $mobile;
   padding: 0 15px;
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1200px;
+    max-width: $desktop;
   }
 }
 
@@ -46,7 +46,7 @@ button {
 }
 
 .section {
-  width: 100vw;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 

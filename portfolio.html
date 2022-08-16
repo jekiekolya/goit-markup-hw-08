@@ -20,12 +20,13 @@
 
   <body>
     <header class="page-header">
-      <div class="container container--center">
+      <!-- Header for tablet and desktop -->
+      <div class="container container--center main-header">
         <!-- Navigation -->
         <nav class="main-nav">
-          <a href="./index.html" lang="en" class="logo page-header__logo">
-            <span class="logo__accent">Web</span>Studio</a
-          >
+          <a href="./index.html" lang="en" class="logo link page-header__logo">
+            <span class="logo__accent">Web</span>Studio
+          </a>
           <ul class="list main-nav__list">
             <li class="main-nav__item">
               <a href="./index.html" class="link main-nav__link">Студія</a>
@@ -33,8 +34,8 @@
             <li class="main-nav__item">
               <a href="./portfolio.html" class="link main-nav__link main-nav__link--current"
                 >Портфоліо</a
-              ></li
-            >
+              >
+            </li>
             <li class="main-nav__item"><a href="" class="link main-nav__link">Контакти</a></li>
           </ul>
         </nav>
@@ -59,6 +60,78 @@
           </li>
         </ul>
       </div>
+
+      <!-- Header for mobile -->
+      <div class="container container--center mobile-header">
+        <nav class="mobile-nav">
+          <a href="./index.html" lang="en" class="logo link page-header__logo">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <button type="button" class="mobile-nav__menu-btn" data-menu-open>
+            <svg width="40" height="40" aria-label="Open mobile menu">
+              <use href="./images/icons/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+
+          <!-- Modal window - menu -->
+
+          <div class="menu__window is-hidden" data-menu>
+            <button type="button" class="menu__btn-close" data-menu-close>
+              <svg width="40" height="40" aria-label="Close mobile menu">
+                <use href="./images/icons/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+
+            <ul class="menu__list-nav">
+              <li class="menu__item-nav">
+                <a href="./index.html" class="link menu__link-nav">Студія</a>
+              </li>
+              <li class="menu__item-nav">
+                <a href="./portfolio.html" class="link menu__link-nav menu__link-nav--current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="menu__item-nav"><a href="" class="link menu__link-nav">Контакти</a></li>
+            </ul>
+
+            <!-- Contacts -->
+            <ul class="list menu__list-contact">
+              <li class="menu__item-contact">
+                <a href="tel:+380961111111" class="link menu__link-contact"> +38 096 111 11 11 </a>
+              </li>
+              <li class="menu__item-contact">
+                <a href="mailto:info@devstudio.com" lang="en" class="link menu__link-contact">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <!-- Social links-->
+            <ul class="menu__list-social">
+              <li class="menu__item-social">
+                <a class="link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu__item-social">
+                <a class="link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu__item-social">
+                <a class="link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu__item-social">
+                <a class="link" href="" target="_blank" rel="nofollow noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -68,7 +141,7 @@
           <h1 class="visually-hidden">Наші роботи</h1>
           <ul class="list menu-btn__list">
             <li class="menu-btn__item">
-              <button type="button" class="menu-btn__button menu-btn__button--active">Все</button>
+              <button type="button" class="menu-btn__button menu-btn__button--active">Усі</button>
             </li>
             <li class="menu-btn__item">
               <button type="button" class="menu-btn__button">Веб-сайти</button>
@@ -89,9 +162,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/techno-kryak.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/techno-kryak.jpg    1x,
+                      ./images/portfolio/mobile/techno-kryak@2x.jpg 2x
+                    "
                     alt="techno-kryak"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -112,9 +187,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/poster-no-vs-gs.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/poster-no-vs-gs.jpg    1x,
+                      ./images/portfolio/mobile/poster-no-vs-gs@2x.jpg 2x
+                    "
                     alt="poster-no-vs-gs"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -135,9 +212,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/restaurant-seafood.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/restaurant-seafood.jpg    1x,
+                      ./images/portfolio/mobile/restaurant-seafood@2x.jpg 2x
+                    "
                     alt="restaurant-seafood"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -158,9 +237,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/project-prime.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/project-prime.jpg    1x,
+                      ./images/portfolio/mobile/project-prime@2x.jpg 2x
+                    "
                     alt="project-prime"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -181,9 +262,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/project-boxes.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/project-boxes.jpg    1x,
+                      ./images/portfolio/mobile/project-boxes@2x.jpg 2x
+                    "
                     alt="project-boxes"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -204,9 +287,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/inspirarion-no-borders.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/inspirarion-no-borders.jpg    1x,
+                      ./images/portfolio/mobile/inspirarion-no-borders@2x.jpg 2x
+                    "
                     alt="inspirarion-has-no-borders"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -227,9 +312,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/limited-edition.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/limited-edition.jpg    1x,
+                      ./images/portfolio/mobile/limited-edition@2x.jpg 2x
+                    "
                     alt="limited-edition"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -250,9 +337,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/project-lab.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/project-lab.jpg    1x,
+                      ./images/portfolio/mobile/project-lab@2x.jpg 2x
+                    "
                     alt="project-lab"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -273,9 +362,11 @@
               <a href="" class="link card__link">
                 <div class="card__icon">
                   <img
-                    src="./images/portfolio/growing-business.jpg"
+                    srcset="
+                      ./images/portfolio/mobile/growing-business.jpg    1x,
+                      ./images/portfolio/mobile/growing-business@2x.jpg 2x
+                    "
                     alt="growing-business"
-                    width="370"
                     class="card-img"
                   />
                   <div class="card__overlay">
@@ -392,7 +483,7 @@
           <form class="form-subscribe" name="form-subscribe" autocomplete="on">
             <h3 class="footer__title">Підпишіться на розсилку</h3>
             <div class="form-subscribe__field">
-              <label>
+              <label class="form-subscribe__label">
                 <input
                   class="form-subscribe__input"
                   type="email"
@@ -411,5 +502,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

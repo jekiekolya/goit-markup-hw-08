@@ -20,6 +20,13 @@
 
   background-color: transparent;
   border: none;
+
+  transition: fill 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 // Modal window - menu
@@ -112,6 +119,7 @@
 .menu__list-social {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 
   font-size: 18px;
   line-height: 1.22;
@@ -120,9 +128,9 @@
 }
 
 .menu__item-social {
-  &:not(:first-child) {
-    padding-left: 10px;
-  }
+  // &:not(:first-child) {
+  //   padding-left: 10px;
+  // }
 
   &:not(:last-child) {
     padding-right: 10px;

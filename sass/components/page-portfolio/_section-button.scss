@@ -1,12 +1,10 @@
 /* buttons */
 .menu-btn__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.menu-btn__item:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  margin-bottom: 40px;
 }
 
 .menu-btn__button {
