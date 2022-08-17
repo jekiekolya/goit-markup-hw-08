@@ -39,6 +39,10 @@
   @media screen and (min-width: $tablet) {
     width: 450px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 }
 
 .modal__btn {
@@ -74,6 +78,10 @@
   text-align: center;
 
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 
 .order-form__label {
@@ -158,6 +166,10 @@
 .checkbox {
   position: relative;
   margin-bottom: 31px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .checkbox__input {
@@ -169,18 +181,24 @@
   position: absolute;
   top: 0;
   transition: fill 250ms $time-function, background-color 250ms $time-function;
-  border-radius: 2px;
+
+  @media screen and (min-width: $desktop) {
+    top: 4px;
+  }
 }
 .checkbox__icon-check {
   position: absolute;
   top: 0;
   fill: transparent;
+
+  @media screen and (min-width: $desktop) {
+    top: 4px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon-empty {
   fill: $accent-color;
   background-color: $accent-color;
-  border-radius: 2px;
 }
 
 .checkbox__name {
@@ -190,6 +208,11 @@
   line-height: 1.17;
 
   user-select: none;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {

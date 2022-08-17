@@ -21,6 +21,10 @@
   @media screen and (min-width: $tablet) {
     width: calc((100% - (30px)) / 2);
   }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - (30px * 3)) / 4);
+  }
 }
 
 .team__hero-img {
@@ -30,6 +34,10 @@
 .team__info {
   padding-top: 30px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__hero-title {

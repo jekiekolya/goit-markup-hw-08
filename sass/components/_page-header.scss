@@ -157,10 +157,7 @@
 // Navigation
 .main-nav__list {
   display: flex;
-}
-
-.main-nav__item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 /* links for pages */
@@ -229,6 +226,14 @@
 
   font-size: 12px;
   line-height: 1.17;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    gap: 30px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .header-contact__link {
@@ -242,19 +247,38 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
 }
 
 .header-contact__icon {
   margin-right: 8px;
   fill: currentColor;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
 }
 
 .header-contact__icon-envelope {
   width: 14px;
   height: 10px;
+
+  @media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .header-contact__icon-smartphone {
   width: 10px;
   height: 14px;
+
+  @media screen and (min-width: $desktop) {
+    width: 10px;
+    height: 16px;
+  }
 }

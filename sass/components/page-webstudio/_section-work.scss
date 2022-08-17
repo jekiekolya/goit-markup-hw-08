@@ -14,17 +14,22 @@
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .work__list {
+  display: flex;
+  gap: 30px;
 }
 
 .work__item {
   position: relative;
-}
-
-.work__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .work__title {

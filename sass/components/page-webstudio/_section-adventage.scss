@@ -1,7 +1,7 @@
 /* Our adventages */
 .adventage {
   @media screen and (min-width: $desktop) {
-    padding-top: 94px;
+    padding-bottom: 0px;
   }
 }
 
@@ -14,6 +14,10 @@
 .adventage__item {
   @media screen and (min-width: $tablet) {
     width: calc((100% - (30px)) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - (30px * 3)) / 4);
   }
 }
 

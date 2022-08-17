@@ -31,9 +31,11 @@
 
   // BG img for desktop
   @media screen and (min-width: $desktop) {
+    padding: 200px 0px;
+
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/background/desktop/group-people.jpg');
-    background-size: $desktop auto;
+    background-size: 1600px auto;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -57,6 +59,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .button {
@@ -74,5 +83,9 @@
   &--active {
     color: $primary-white-color;
     background-color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 32px;
   }
 }

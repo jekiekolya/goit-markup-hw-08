@@ -12,6 +12,10 @@
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px * 2) / 3);
   }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 30px * 5) / 6);
+  }
 }
 
 .client__link {
