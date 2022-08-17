@@ -9,13 +9,35 @@
     url('../images/background/mobile/group-people.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px auto;
+  background-size: $mobile auto;
   background-color: $secondary-background-color;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    & {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/mobile/group-people@2x.jpg');
+  }
+
+  // BG img for tablet
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/tablet/group-people.jpg');
+    background-size: $tablet auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/background/mobile/group-people@2x.jpg');
+        url('../images/background/tablet/group-people@2x.jpg');
+    }
+  }
+
+  // BG img for desktop
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/desktop/group-people.jpg');
+    background-size: $desktop auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background/desktop/group-people@2x.jpg');
     }
   }
 }
@@ -29,6 +51,12 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button {

@@ -1,6 +1,7 @@
 // logo
 .logo {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -13,6 +14,11 @@
     color: $accent-color;
   }
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 26px;
     line-height: 1.2;
@@ -21,6 +27,10 @@
 
 .page-header__logo {
   color: #000000;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-right: 93px;

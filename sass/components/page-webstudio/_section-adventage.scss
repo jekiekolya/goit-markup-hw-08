@@ -6,10 +6,15 @@
 }
 
 .adventage__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.adventage__item:not(:last-child) {
-  margin-bottom: 30px;
+.adventage__item {
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - (30px)) / 2);
+  }
 }
 
 .adventage__title {

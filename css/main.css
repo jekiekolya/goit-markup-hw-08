@@ -208,9 +208,12 @@ button {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-@media screen and (max-width: 767px) {
+.main-header {
+  display: none;
+}
+@media screen and (min-width: 768px) {
   .main-header {
-    display: none;
+    display: flex;
   }
 }
 
@@ -239,7 +242,7 @@ button {
   position: relative;
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -280,12 +283,15 @@ button {
 /* Contacts */
 .header-contact {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
   margin-left: auto;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .header-contact__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
   color: #757575;
@@ -295,17 +301,24 @@ button {
   color: #2196f3;
 }
 
-.header-contact__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-contact__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
+.header-contact__icon-envelope {
+  width: 14px;
+  height: 10px;
+}
+
+.header-contact__icon-smartphone {
+  width: 10px;
+  height: 14px;
+}
+
 .logo {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 15px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -316,6 +329,12 @@ button {
 .logo__accent {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -325,6 +344,11 @@ button {
 
 .page-header__logo {
   color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-header__logo {
@@ -354,6 +378,28 @@ button {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/mobile/group-people@2x.jpg");
   }
 }
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/tablet/group-people.jpg");
+    background-size: 768px auto;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/tablet/group-people@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/desktop/group-people.jpg");
+    background-size: 1200px auto;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/desktop/group-people@2x.jpg");
+  }
+}
 
 .order__title {
   margin-bottom: 30px;
@@ -363,6 +409,13 @@ button {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .order__title {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button {
@@ -602,8 +655,16 @@ button {
   }
 }
 
-.adventage__item:not(:last-child) {
-  margin-bottom: 30px;
+.adventage__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .adventage__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .adventage__title {
