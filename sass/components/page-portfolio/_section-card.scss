@@ -2,17 +2,20 @@
 .card__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   gap: 30px;
+  background: $primary-white-color;
 }
 .card__item {
-  max-width: 100%;
-
-  background: $primary-white-color;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms $time-function;
 
   &:hover,
@@ -58,6 +61,7 @@
 }
 
 .card__info {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border-left: 1px solid #eeeeee;

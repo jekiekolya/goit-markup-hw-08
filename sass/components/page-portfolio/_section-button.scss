@@ -5,6 +5,11 @@
   row-gap: 15px;
   column-gap: 8px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .menu-btn__button {
