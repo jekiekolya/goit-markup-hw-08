@@ -1225,15 +1225,6 @@ button {
 .form-subscribe__input:focus-within {
   border-color: #ffffff;
 }
-.form-subscribe__input::-moz-placeholder {
-  position: absolute;
-}
-.form-subscribe__input:-ms-input-placeholder {
-  position: absolute;
-}
-.form-subscribe__input::placeholder {
-  position: absolute;
-}
 @media screen and (min-width: 768px) {
   .form-subscribe__input {
     width: 450px;
