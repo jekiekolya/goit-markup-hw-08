@@ -502,10 +502,10 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: calc(100% - 30px);
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc(100% - 30px);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -523,13 +523,13 @@ button {
 
 .modal__btn {
   position: absolute;
+  right: 8px;
+  top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
-  right: 8px;
-  top: 8px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -669,7 +669,6 @@ button {
 .checkbox__icon-empty {
   position: absolute;
   top: 0;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .checkbox__icon-empty {
@@ -680,7 +679,8 @@ button {
 .checkbox__icon-check {
   position: absolute;
   top: 0;
-  fill: transparent;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .checkbox__icon-check {
@@ -688,9 +688,8 @@ button {
   }
 }
 
-.checkbox__input:checked + .checkbox__icon-empty {
-  fill: #2196f3;
-  background-color: #2196f3;
+.checkbox__input:checked ~ .checkbox__icon-check {
+  opacity: 1;
 }
 
 .checkbox__name {

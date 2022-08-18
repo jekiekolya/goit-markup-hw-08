@@ -11,7 +11,7 @@
             </path>
         </symbol>
         <symbol id="icon-check" viewBox="0 0 34 32">
-            <path
+            <path fill="#2196f3" style="fill: var(--color2, #2196f3)"
                 d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z">
             </path>
             <path fill="#fff" style="fill: var(--color3, #fff); stroke: var(--color3, #fff)" stroke="#fff"

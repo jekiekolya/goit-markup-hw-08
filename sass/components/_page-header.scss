@@ -47,6 +47,7 @@
   width: 100%;
   min-height: 100%;
   padding: 48px 40px;
+
   background-color: $primary-white-color;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -130,6 +131,7 @@
 .menu__item-social {
   &:not(:last-child) {
     padding-right: 10px;
+
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
@@ -146,6 +148,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   border-bottom: 1px solid #ececec;
 }
 
