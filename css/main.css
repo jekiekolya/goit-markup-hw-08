@@ -411,7 +411,7 @@ button {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/mobile/group-people.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px auto;
+  background-size: cover;
   background-color: var(--secondary-background-color);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1101,10 +1101,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__container {
     align-items: baseline;
   }
 }

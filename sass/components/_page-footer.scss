@@ -11,9 +11,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  @media screen and (min-width: $desktop) {
     align-items: baseline;
   }
 }

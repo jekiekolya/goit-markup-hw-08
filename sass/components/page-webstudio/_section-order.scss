@@ -9,7 +9,7 @@
     url('../images/background/mobile/group-people.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: $mobile auto;
+  background-size: cover;
   background-color: var(--secondary-background-color);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
