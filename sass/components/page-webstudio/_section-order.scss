@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: $mobile auto;
-  background-color: $secondary-background-color;
+  background-color: var(--secondary-background-color);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -47,7 +47,7 @@
 .order__title {
   margin-bottom: 30px;
 
-  color: $primary-white-color;
+  color: var(--primary-white-color);
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -81,8 +81,8 @@
   letter-spacing: 0.06em;
 
   &--active {
-    color: $primary-white-color;
-    background-color: $accent-color;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
   }
 
   @media screen and (min-width: $desktop) {

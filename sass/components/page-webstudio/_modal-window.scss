@@ -8,7 +8,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 99;
   opacity: 1;
-  transition: opacity 250ms $time-function;
+  transition: opacity 250ms var(--time-function);
 }
 
 .modal__backdrop.is-hidden {
@@ -29,9 +29,9 @@
   padding: 40px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms $time-function;
+  transition: transform 250ms var(--time-function);
 
-  background-color: $primary-white-color;
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -56,16 +56,16 @@
   width: 30px;
   height: 30px;
 
-  background: $primary-white-color;
+  background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: fill 250ms $time-function, border-color 250ms $time-function;
+  transition: fill 250ms var(--time-function), border-color 250ms var(--time-function);
 
   &:hover,
   &:focus {
-    fill: $accent-color;
-    border-color: $accent-color;
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
 
@@ -77,7 +77,7 @@
   line-height: 1.5;
   text-align: center;
 
-  color: $title-text-color;
+  color: var(--title-text-color);
 
   @media screen and (min-width: $desktop) {
     line-height: 1.15;
@@ -103,7 +103,7 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: $primary-text-color;
+  color: var(--primary-text-color);
 }
 
 .order-form__input {
@@ -113,15 +113,15 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  transition: border-color 250ms $time-function;
+  transition: border-color 250ms var(--time-function);
 
   .order-form__label:focus-within & {
-    border-color: $accent-color;
+    border-color: var(--accent-color);
     outline: none;
   }
 
   &:not(:placeholder-shown) {
-    border-color: $accent-color;
+    border-color: var(--accent-color);
   }
 }
 
@@ -132,15 +132,15 @@
   width: 18px;
   height: 18px;
 
-  transition: fill 250ms $time-function;
+  transition: fill 250ms var(--time-function);
 
   .order-form__label:focus-within & {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 
 .order-form__input:not(:placeholder-shown) + .order-form__icon {
-  fill: $accent-color;
+  fill: var(--accent-color);
 }
 
 .order-form__comment {
@@ -190,7 +190,7 @@
   top: 0;
   opacity: 0;
 
-  transition: opacity 250ms $time-function;
+  transition: opacity 250ms var(--time-function);
 
   @media screen and (min-width: $desktop) {
     top: 4px;
@@ -218,13 +218,13 @@
 .checkbox__link {
   text-decoration: underline;
   text-underline-position: under;
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .order-form__btn {
   width: 200px;
 
-  transition: background-color 250ms $time-function;
+  transition: background-color 250ms var(--time-function);
 
   &:hover,
   &:focus {

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
 
   gap: 30px;
-  background: $primary-white-color;
+  background: var(--primary-white-color);
 }
 .card__item {
   @media screen and (min-width: $tablet) {
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition: box-shadow 250ms $time-function;
+  transition: box-shadow 250ms var(--time-function);
 
   &:hover,
   &:focus {
@@ -48,7 +48,7 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms $time-function;
+  transition: transform 250ms var(--time-function);
 
   .card__link:hover &,
   .card__link:focus & {
@@ -63,7 +63,7 @@
   font-size: 18px;
   line-height: 1.56;
 
-  color: $primary-white-color;
+  color: var(--primary-white-color);
 }
 
 .card__info {
@@ -71,14 +71,14 @@
   padding: 20px 24px;
   padding-bottom: 19px;
 
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid var(--border-card-color);
+  border-right: 1px solid var(--border-card-color);
+  border-bottom: 1px solid var(--border-card-color);
 }
 
 .card__title {
   margin-bottom: 4px;
-  color: $title-text-color;
+  color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -90,5 +90,5 @@
   font-size: 16px;
   line-height: 1.88;
 
-  color: $primary-text-color;
+  color: var(--primary-text-color);
 }

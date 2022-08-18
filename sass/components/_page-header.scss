@@ -21,11 +21,11 @@
   background-color: transparent;
   border: none;
 
-  transition: fill 250ms $time-function;
+  transition: fill 250ms var(--time-function);
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 
@@ -48,12 +48,12 @@
   min-height: 100%;
   padding: 48px 40px;
 
-  background-color: $primary-white-color;
+  background-color: var(--primary-white-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
   transform: translateY(0%);
-  transition: transform 250ms $time-function;
+  transition: transform 250ms var(--time-function);
 }
 
 .menu__btn-close {
@@ -69,11 +69,11 @@
   background: transparent;
   border: 0px;
 
-  transition: fill 250ms $time-function;
+  transition: fill 250ms var(--time-function);
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 
@@ -90,10 +90,10 @@
   font-size: 40px;
   line-height: 1.18;
 
-  color: $title-text-color;
+  color: var(--title-text-color);
 
   &--current {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 }
 
@@ -113,7 +113,7 @@
   font-size: 34px;
   line-height: 1.18;
 
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 // Social links
@@ -125,13 +125,12 @@
   font-size: 18px;
   line-height: 1.22;
 
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 .menu__item-social {
   &:not(:last-child) {
     padding-right: 10px;
-
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
@@ -171,13 +170,13 @@
   padding-top: 32px;
   padding-bottom: 31px;
 
-  color: $title-text-color;
+  color: var(--title-text-color);
 
-  transition: color 250ms $time-function;
+  transition: color 250ms var(--time-function);
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 
   &::after {
@@ -190,10 +189,10 @@
     bottom: -1px;
 
     border-radius: 2px;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
 
     transform: scaleX(0);
-    transition: transform 250ms $time-function, width 250ms $time-function;
+    transition: transform 250ms var(--time-function), width 250ms var(--time-function);
   }
   &:hover::after,
   &:focus::after {
@@ -202,7 +201,7 @@
 }
 
 .main-nav__link--current {
-  color: $accent-color;
+  color: var(--accent-color);
 
   &::after {
     position: absolute;
@@ -215,7 +214,7 @@
     left: 0px;
     bottom: -1px;
     border-radius: 2px;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
   }
 }
 
@@ -242,13 +241,13 @@
 .header-contact__link {
   display: flex;
   align-items: center;
-  color: $primary-text-color;
+  color: var(--primary-text-color);
 
-  transition: color 250ms $time-function;
+  transition: color 250ms var(--time-function);
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 
   @media screen and (min-width: $desktop) {

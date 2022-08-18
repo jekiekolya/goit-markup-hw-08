@@ -11,7 +11,7 @@
   text-decoration: none;
 
   &__accent {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 
   @media screen and (min-width: $tablet) {
