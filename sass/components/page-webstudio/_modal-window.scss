@@ -36,11 +36,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     width: 450px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     width: 528px;
   }
 }
@@ -79,7 +79,7 @@
 
   color: var(--title-text-color);
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     line-height: 1.15;
   }
 }
@@ -167,7 +167,7 @@
   position: relative;
   margin-bottom: 31px;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     margin-bottom: 30px;
   }
 }
@@ -181,7 +181,7 @@
   position: absolute;
   top: 0;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     top: 4px;
   }
 }
@@ -192,7 +192,7 @@
 
   transition: opacity 250ms var(--time-function);
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     top: 4px;
   }
 }
@@ -209,7 +209,7 @@
 
   user-select: none;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     font-size: 14px;
     line-height: 1.71;
   }

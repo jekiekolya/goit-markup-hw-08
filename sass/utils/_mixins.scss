@@ -1,0 +1,38 @@
+// screen-width
+@mixin sw($type) {
+  @if $type == 'mobile' {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  }
+
+  @if $type == 'only-mobile' {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+
+  @if $type == 'tablet' {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $type == 'only-tablet' {
+    @media screen and (max-width: ($tablet - 0.02)) {
+      @content;
+    }
+  }
+
+  @if $type == 'desktop' {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $type == 'not-desktop' {
+    @media screen and (max-width: ($desktop - 0.02)) {
+      @content;
+    }
+  }
+}

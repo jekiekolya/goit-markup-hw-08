@@ -9,11 +9,11 @@
 .client__item {
   width: calc((100% - 30px) / 2);
 
-  @media screen and (min-width: $tablet) {
+  @include sw (tablet) {
     width: calc((100% - 30px * 2) / 3);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw (desktop) {
     width: calc((100% - 30px * 5) / 6);
   }
 }

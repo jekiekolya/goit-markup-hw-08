@@ -14,12 +14,12 @@
     color: var(--accent-color);
   }
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     padding-top: 26px;
     padding-bottom: 25px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     padding: 24px 0px;
     font-size: 26px;
     line-height: 1.2;
@@ -29,11 +29,11 @@
 .page-header__logo {
   color: #000000;
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     margin-right: 88px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     margin-right: 93px;
   }
 }

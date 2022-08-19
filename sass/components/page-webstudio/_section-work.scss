@@ -2,7 +2,7 @@
 .work {
   display: none;
 
-  @media screen and (min-width: $desktop) {
+  @include sw (desktop) {
     display: block;
   }
 }
@@ -15,7 +15,7 @@
   line-height: 1.18;
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include sw (desktop) {
     margin-bottom: 50px;
 
     font-size: 36px;

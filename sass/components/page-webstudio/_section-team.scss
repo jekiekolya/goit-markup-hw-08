@@ -18,11 +18,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     width: calc((100% - (30px)) / 2);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     width: calc((100% - (30px * 3)) / 4);
   }
 }
@@ -35,7 +35,7 @@
   padding-top: 30px;
   padding-bottom: 24px;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     padding-bottom: 30px;
   }
 }

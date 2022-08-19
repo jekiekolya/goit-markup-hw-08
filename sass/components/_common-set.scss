@@ -29,17 +29,17 @@ button {
   max-width: $mobile;
   padding: 0 15px;
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     max-width: $tablet;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     max-width: $desktop;
   }
 }
 
 .container--center {
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     display: flex;
     align-items: center;
   }
@@ -50,7 +50,7 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

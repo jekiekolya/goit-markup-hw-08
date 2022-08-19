@@ -7,7 +7,7 @@
 }
 
 .footer__container {
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,12 +21,12 @@
 
   color: var(--primary-white-color);
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     width: 232px;
     margin-right: 165px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     width: 231px;
     margin-bottom: 0px;
     margin-right: 70px;
@@ -39,7 +39,7 @@
   font-style: normal;
   line-height: 1.71;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     line-height: 1.5;
   }
 }
@@ -56,7 +56,7 @@
 .address__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     margin-bottom: 9px;
   }
 }
@@ -66,7 +66,7 @@
   margin-bottom: 60px;
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     margin-right: 93px;
     margin-bottom: 0px;
     text-align: start;
@@ -98,7 +98,7 @@
 /* subscribe to the newsletter */
 .footer__section-subscribe {
   text-align: center;
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     text-align: start;
   }
 }
@@ -108,7 +108,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     flex-direction: row;
     gap: 12px;
   }
@@ -118,7 +118,7 @@
   width: 100%;
   margin-bottom: 20px;
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     margin-bottom: 0px;
   }
 }
@@ -142,11 +142,11 @@
     border-color: var(--primary-white-color);
   }
 
-  @media screen and (min-width: $tablet) {
+  @include sw(tablet) {
     width: 450px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw(desktop) {
     width: 358px;
   }
 }

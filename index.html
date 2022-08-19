@@ -73,7 +73,12 @@
           <a href="./index.html" lang="en" class="logo link page-header__logo">
             <span class="logo__accent">Web</span>Studio
           </a>
-          <button type="button" class="mobile-nav__menu-btn" data-menu-open>
+          <button
+            type="button"
+            class="mobile-nav__menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="40" height="40" aria-label="Open mobile menu">
               <use href="./images/icons/icons.svg#icon-menu-open"></use>
             </svg>
@@ -81,8 +86,8 @@
 
           <!-- Modal window - menu -->
 
-          <div class="menu__window is-hidden" data-menu>
-            <button type="button" class="menu__btn-close" data-menu-close>
+          <div class="menu__window js-menu-container">
+            <button type="button" class="menu__btn-close js-close-menu">
               <svg width="40" height="40" aria-label="Close mobile menu">
                 <use href="./images/icons/icons.svg#icon-menu-close"></use>
               </svg>
@@ -828,7 +833,7 @@
       </div>
     </footer>
 
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

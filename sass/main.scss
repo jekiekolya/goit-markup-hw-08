@@ -23,9 +23,10 @@
 //
 
 // Main components
-@import './utils/variables';
 @import './utils/reset';
 @import './utils/decimals';
+@import './utils/variables';
+@import './utils/mixins';
 @import './components/common-set';
 
 // Page HEADER

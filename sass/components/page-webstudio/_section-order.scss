@@ -18,7 +18,7 @@
   }
 
   // BG img for tablet
-  @media screen and (min-width: $tablet) {
+  @include sw (tablet) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/background/tablet/group-people.jpg');
 
@@ -29,7 +29,7 @@
   }
 
   // BG img for desktop
-  @media screen and (min-width: $desktop) {
+  @include sw (desktop) {
     padding: 200px 0px;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -53,13 +53,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: $tablet) {
+  @include sw (tablet) {
     width: 360px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw (desktop) {
     width: 696px;
 
     font-size: 44px;
@@ -84,7 +84,7 @@
     background-color: var(--accent-color);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include sw (desktop) {
     padding: 10px 32px;
   }
 }
